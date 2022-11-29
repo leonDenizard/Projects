@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="../style/index.css">
+  </head>
+
+  <body>
+    <main>
+        <h1>Advinhe o número...</h1>
+       
+        <div class="instruction">
+          <p>Voce tem que chutar um numero de <b>1</b> a <b>100</b>.</p> 
+        </div>
+
+        <div class="instruction">
+          <p>Você tem <b>10</b> chances. Irei dizer se seu palpilte está <b>alto</b> ou <b>baixo</b>.</p>
+        </div>
+
+        <div class="form">
+          <div id="form-label">
+            <label for="guessField">Digite seu palpite: </label>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField">
+          </div>
+          
+          <div>
+            <input type="submit" value="Enviar palpite" placeholder="00" class="guessSubmit">
+          </div>
+        </div>
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </main>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
