@@ -14,7 +14,7 @@ const title = document.querySelector('h1');
 
 function textWriter(element){
   const textArray = element.innerHTML.split('');
-
+  
   element.innerHTML = ""
   textArray.forEach((lyrc, i) =>{
     setTimeout(()=> { element.innerHTML += `${lyrc}` }, 95 * i)
